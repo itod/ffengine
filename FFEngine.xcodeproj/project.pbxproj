@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		D3627D950F22798F002E2C0F /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3627D940F22798F002E2C0F /* OCMock.framework */; };
+		D3627D9A0F227994002E2C0F /* OCMock.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D3627D940F22798F002E2C0F /* OCMock.framework */; };
+		D3627DA10F2279AF002E2C0F /* FFEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* FFEngine.framework */; };
+		D3627DA20F2279B2002E2C0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D69BFE84028FC02AAC07 /* Foundation.framework */; };
+		D3627DB60F227B5E002E2C0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D69BFE84028FC02AAC07 /* Foundation.framework */; };
+		D3627DBA0F227B87002E2C0F /* FriendFeedTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D3627DA70F227A13002E2C0F /* FriendFeedTest.m */; };
+		D3627E040F227D5A002E2C0F /* FFError.h in Headers */ = {isa = PBXBuildFile; fileRef = D3627E020F227D5A002E2C0F /* FFError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3627E050F227D5A002E2C0F /* FFError.m in Sources */ = {isa = PBXBuildFile; fileRef = D3627E030F227D5A002E2C0F /* FFError.m */; };
+		D3627E820F22A002002E2C0F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3627E810F22A002002E2C0F /* SenTestingKit.framework */; };
+		D3627EF30F22A454002E2C0F /* DebugAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3627EF20F22A454002E2C0F /* DebugAppDelegate.m */; };
+		D3627F010F22A4A5002E2C0F /* DebugApp-MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3627F000F22A4A5002E2C0F /* DebugApp-MainMenu.xib */; };
+		D3627F140F22A59E002E2C0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3627F130F22A59E002E2C0F /* main.m */; };
+		D3627F440F22A6DD002E2C0F /* FFEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* FFEngine.framework */; };
+		D36280F30F22DB16002E2C0F /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36280F20F22DB16002E2C0F /* CoreServices.framework */; };
+		D362828B0F23D8DD002E2C0F /* PubSub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D362828A0F23D8DD002E2C0F /* PubSub.framework */; };
+		D36285A00F2522BF002E2C0F /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D362859F0F2522BF002E2C0F /* libxml2.dylib */; };
+		D36286850F25322A002E2C0F /* FFXmlDocPtrWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = D36286830F25322A002E2C0F /* FFXmlDocPtrWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D36286860F25322A002E2C0F /* FFXmlDocPtrWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D36286840F25322A002E2C0F /* FFXmlDocPtrWrapper.m */; };
+		D3C7F0EE0F256C98007A4242 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C7F0ED0F256C98007A4242 /* Security.framework */; };
+		D3C7F35A0F26D134007A4242 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C7F3560F26D134007A4242 /* SBJSON.m */; };
+		D3C7F35C0F26D134007A4242 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C7F3580F26D134007A4242 /* NSString+SBJSON.m */; };
+		D3C7F3C50F283428007A4242 /* FFEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C7F3B70F283428007A4242 /* FFEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3C7F3C70F283428007A4242 /* FFEngineBaseImpl+BasicAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C7F3B90F283428007A4242 /* FFEngineBaseImpl+BasicAuth.m */; };
+		D3C7F3C90F283428007A4242 /* FFEngineBaseImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C7F3BB0F283428007A4242 /* FFEngineBaseImpl.m */; };
+		D3C7F3CB0F283428007A4242 /* FFEngineCFNetworkImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C7F3BD0F283428007A4242 /* FFEngineCFNetworkImpl.m */; };
+		D3C7F3CC0F283428007A4242 /* FFEngineFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C7F3BE0F283428007A4242 /* FFEngineFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3C7F3CD0F283428007A4242 /* FFEngineFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C7F3BF0F283428007A4242 /* FFEngineFactory.m */; };
+		D3C7F4190F2C0CDE007A4242 /* FFEngineDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C7F4170F2C0CDE007A4242 /* FFEngineDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3C7F4230F2C2813007A4242 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C7F4220F2C2813007A4242 /* WebKit.framework */; };
+		D3C7F4290F2D3F97007A4242 /* xml2html.xsl in Resources */ = {isa = PBXBuildFile; fileRef = D3C7F4280F2D3F97007A4242 /* xml2html.xsl */; };
+		D3D121B40F3A836300DE97EF /* FFTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D121B30F3A836300DE97EF /* FFTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3627E4E0F229D03002E2C0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = FriendFeed;
+		};
+		D3627F3F0F22A6CA002E2C0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = FriendFeed;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D3627D930F22797B002E2C0F /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(BUILT_PRODUCTS_DIR)";
+			dstSubfolderSpec = 0;
+			files = (
+				D3627D9A0F227994002E2C0F /* OCMock.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* FFEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FFEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3627D800F227904002E2C0F /* Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3627D810F227904002E2C0F /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		D3627D940F22798F002E2C0F /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = frameworks/OCMock.framework; sourceTree = "<group>"; };
+		D3627DA60F227A13002E2C0F /* FriendFeedTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FriendFeedTest.h; path = test/FriendFeedTest.h; sourceTree = "<group>"; };
+		D3627DA70F227A13002E2C0F /* FriendFeedTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FriendFeedTest.m; path = test/FriendFeedTest.m; sourceTree = "<group>"; };
+		D3627E020F227D5A002E2C0F /* FFError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFError.h; path = src/FFError.h; sourceTree = "<group>"; };
+		D3627E030F227D5A002E2C0F /* FFError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FFError.m; path = src/FFError.m; sourceTree = "<group>"; };
+		D3627E810F22A002002E2C0F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D3627EE60F22A426002E2C0F /* DebugApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DebugApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3627EE80F22A426002E2C0F /* DebugApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DebugApp-Info.plist"; sourceTree = "<group>"; };
+		D3627EF10F22A454002E2C0F /* DebugAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DebugAppDelegate.h; path = debugapp/DebugAppDelegate.h; sourceTree = "<group>"; };
+		D3627EF20F22A454002E2C0F /* DebugAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DebugAppDelegate.m; path = debugapp/DebugAppDelegate.m; sourceTree = "<group>"; };
+		D3627F000F22A4A5002E2C0F /* DebugApp-MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "DebugApp-MainMenu.xib"; path = "debugapp/DebugApp-MainMenu.xib"; sourceTree = "<group>"; };
+		D3627F130F22A59E002E2C0F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = debugapp/main.m; sourceTree = "<group>"; };
+		D36280F20F22DB16002E2C0F /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		D362828A0F23D8DD002E2C0F /* PubSub.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PubSub.framework; path = /System/Library/Frameworks/PubSub.framework; sourceTree = "<absolute>"; };
+		D362859F0F2522BF002E2C0F /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = /usr/lib/libxml2.dylib; sourceTree = "<absolute>"; };
+		D36286830F25322A002E2C0F /* FFXmlDocPtrWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFXmlDocPtrWrapper.h; path = src/FFXmlDocPtrWrapper.h; sourceTree = "<group>"; };
+		D36286840F25322A002E2C0F /* FFXmlDocPtrWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FFXmlDocPtrWrapper.m; path = src/FFXmlDocPtrWrapper.m; sourceTree = "<group>"; };
+		D3C7F0ED0F256C98007A4242 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		D3C7F3550F26D134007A4242 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJSON.h; path = src/JSON/SBJSON.h; sourceTree = "<group>"; };
+		D3C7F3560F26D134007A4242 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJSON.m; path = src/JSON/SBJSON.m; sourceTree = "<group>"; };
+		D3C7F3570F26D134007A4242 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SBJSON.h"; path = "src/JSON/NSString+SBJSON.h"; sourceTree = "<group>"; };
+		D3C7F3580F26D134007A4242 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+SBJSON.m"; path = "src/JSON/NSString+SBJSON.m"; sourceTree = "<group>"; };
+		D3C7F3B70F283428007A4242 /* FFEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFEngine.h; path = src/FFEngine.h; sourceTree = "<group>"; };
+		D3C7F3B80F283428007A4242 /* FFEngineBaseImpl+BasicAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "FFEngineBaseImpl+BasicAuth.h"; path = "src/FFEngineBaseImpl+BasicAuth.h"; sourceTree = "<group>"; };
+		D3C7F3B90F283428007A4242 /* FFEngineBaseImpl+BasicAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "FFEngineBaseImpl+BasicAuth.m"; path = "src/FFEngineBaseImpl+BasicAuth.m"; sourceTree = "<group>"; };
+		D3C7F3BA0F283428007A4242 /* FFEngineBaseImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFEngineBaseImpl.h; path = src/FFEngineBaseImpl.h; sourceTree = "<group>"; };
+		D3C7F3BB0F283428007A4242 /* FFEngineBaseImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FFEngineBaseImpl.m; path = src/FFEngineBaseImpl.m; sourceTree = "<group>"; };
+		D3C7F3BC0F283428007A4242 /* FFEngineCFNetworkImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFEngineCFNetworkImpl.h; path = src/FFEngineCFNetworkImpl.h; sourceTree = "<group>"; };
+		D3C7F3BD0F283428007A4242 /* FFEngineCFNetworkImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FFEngineCFNetworkImpl.m; path = src/FFEngineCFNetworkImpl.m; sourceTree = "<group>"; };
+		D3C7F3BE0F283428007A4242 /* FFEngineFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFEngineFactory.h; path = src/FFEngineFactory.h; sourceTree = "<group>"; };
+		D3C7F3BF0F283428007A4242 /* FFEngineFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FFEngineFactory.m; path = src/FFEngineFactory.m; sourceTree = "<group>"; };
+		D3C7F4170F2C0CDE007A4242 /* FFEngineDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFEngineDelegate.h; path = src/FFEngineDelegate.h; sourceTree = "<group>"; };
+		D3C7F4220F2C2813007A4242 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
+		D3C7F4280F2D3F97007A4242 /* xml2html.xsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = xml2html.xsl; path = debugapp/xml2html.xsl; sourceTree = "<group>"; };
+		D3D121660F3A81A500DE97EF /* FFEngine_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFEngine_Prefix.pch; sourceTree = "<group>"; };
+		D3D121B30F3A836300DE97EF /* FFTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFTypes.h; path = src/FFTypes.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3627DB60F227B5E002E2C0F /* Foundation.framework in Frameworks */,
+				D36280F30F22DB16002E2C0F /* CoreServices.framework in Frameworks */,
+				D362828B0F23D8DD002E2C0F /* PubSub.framework in Frameworks */,
+				D36285A00F2522BF002E2C0F /* libxml2.dylib in Frameworks */,
+				D3C7F0EE0F256C98007A4242 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3627D7D0F227904002E2C0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3627DA20F2279B2002E2C0F /* Foundation.framework in Frameworks */,
+				D3627DA10F2279AF002E2C0F /* FFEngine.framework in Frameworks */,
+				D3627D950F22798F002E2C0F /* OCMock.framework in Frameworks */,
+				D3627E820F22A002002E2C0F /* SenTestingKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3627EE40F22A426002E2C0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3627F440F22A6DD002E2C0F /* FFEngine.framework in Frameworks */,
+				D3C7F4230F2C2813007A4242 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* FFEngine.framework */,
+				D3627D800F227904002E2C0F /* Tests.octest */,
+				D3627EE60F22A426002E2C0F /* DebugApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* FriendFeed */ = {
+			isa = PBXGroup;
+			children = (
+				D3627EF00F22A439002E2C0F /* DebugApp */,
+				D3627DA50F2279C8002E2C0F /* Tests */,
+				08FB77AEFE84172EC02AAC07 /* Framework */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = FriendFeed;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				D3627D920F22797B002E2C0F /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+				D3C7F4280F2D3F97007A4242 /* xml2html.xsl */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				D3C7F3B70F283428007A4242 /* FFEngine.h */,
+				D3D121B30F3A836300DE97EF /* FFTypes.h */,
+				D3C7F4170F2C0CDE007A4242 /* FFEngineDelegate.h */,
+				D3C7F3B80F283428007A4242 /* FFEngineBaseImpl+BasicAuth.h */,
+				D3C7F3B90F283428007A4242 /* FFEngineBaseImpl+BasicAuth.m */,
+				D3C7F3BA0F283428007A4242 /* FFEngineBaseImpl.h */,
+				D3C7F3BB0F283428007A4242 /* FFEngineBaseImpl.m */,
+				D3C7F3BC0F283428007A4242 /* FFEngineCFNetworkImpl.h */,
+				D3C7F3BD0F283428007A4242 /* FFEngineCFNetworkImpl.m */,
+				D3C7F3BE0F283428007A4242 /* FFEngineFactory.h */,
+				D3C7F3BF0F283428007A4242 /* FFEngineFactory.m */,
+				D3627E020F227D5A002E2C0F /* FFError.h */,
+				D3627E030F227D5A002E2C0F /* FFError.m */,
+				D36286830F25322A002E2C0F /* FFXmlDocPtrWrapper.h */,
+				D36286840F25322A002E2C0F /* FFXmlDocPtrWrapper.m */,
+				D36283570F23E99C002E2C0F /* JSON */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D362859F0F2522BF002E2C0F /* libxml2.dylib */,
+				D362828A0F23D8DD002E2C0F /* PubSub.framework */,
+				D36280F20F22DB16002E2C0F /* CoreServices.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+				D3C7F0ED0F256C98007A4242 /* Security.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D3D121660F3A81A500DE97EF /* FFEngine_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		D3627D920F22797B002E2C0F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3C7F4220F2C2813007A4242 /* WebKit.framework */,
+				D3627E810F22A002002E2C0F /* SenTestingKit.framework */,
+				D3627D940F22798F002E2C0F /* OCMock.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D3627DA50F2279C8002E2C0F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D3627DA60F227A13002E2C0F /* FriendFeedTest.h */,
+				D3627DA70F227A13002E2C0F /* FriendFeedTest.m */,
+				D3627D810F227904002E2C0F /* Tests-Info.plist */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		D3627EF00F22A439002E2C0F /* DebugApp */ = {
+			isa = PBXGroup;
+			children = (
+				D3627F130F22A59E002E2C0F /* main.m */,
+				D3627EF10F22A454002E2C0F /* DebugAppDelegate.h */,
+				D3627EF20F22A454002E2C0F /* DebugAppDelegate.m */,
+				D3627EE80F22A426002E2C0F /* DebugApp-Info.plist */,
+				D3627F000F22A4A5002E2C0F /* DebugApp-MainMenu.xib */,
+			);
+			name = DebugApp;
+			sourceTree = "<group>";
+		};
+		D36283570F23E99C002E2C0F /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				D3C7F3550F26D134007A4242 /* SBJSON.h */,
+				D3C7F3560F26D134007A4242 /* SBJSON.m */,
+				D3C7F3570F26D134007A4242 /* NSString+SBJSON.h */,
+				D3C7F3580F26D134007A4242 /* NSString+SBJSON.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3C7F3C50F283428007A4242 /* FFEngine.h in Headers */,
+				D3C7F3CC0F283428007A4242 /* FFEngineFactory.h in Headers */,
+				D3627E040F227D5A002E2C0F /* FFError.h in Headers */,
+				D36286850F25322A002E2C0F /* FFXmlDocPtrWrapper.h in Headers */,
+				D3C7F4190F2C0CDE007A4242 /* FFEngineDelegate.h in Headers */,
+				D3D121B40F3A836300DE97EF /* FFTypes.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8DC2EF4F0486A6940098B216 /* FFEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "FFEngine" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FFEngine;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = FriendFeed;
+			productReference = 8DC2EF5B0486A6940098B216 /* FFEngine.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D3627D7F0F227904002E2C0F /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3627D840F227905002E2C0F /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				D3627D7B0F227904002E2C0F /* Resources */,
+				D3627D7C0F227904002E2C0F /* Sources */,
+				D3627D930F22797B002E2C0F /* Copy Frameworks */,
+				D3627D7D0F227904002E2C0F /* Frameworks */,
+				D3627D7E0F227904002E2C0F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3627E4F0F229D03002E2C0F /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = D3627D800F227904002E2C0F /* Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		D3627EE50F22A426002E2C0F /* DebugApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3627EEB0F22A427002E2C0F /* Build configuration list for PBXNativeTarget "DebugApp" */;
+			buildPhases = (
+				D3627EE20F22A426002E2C0F /* Resources */,
+				D3627EE30F22A426002E2C0F /* Sources */,
+				D3627EE40F22A426002E2C0F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3627F400F22A6CA002E2C0F /* PBXTargetDependency */,
+			);
+			name = DebugApp;
+			productName = DebugApp;
+			productReference = D3627EE60F22A426002E2C0F /* DebugApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "FFEngine" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* FriendFeed */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* FFEngine */,
+				D3627D7F0F227904002E2C0F /* Tests */,
+				D3627EE50F22A426002E2C0F /* DebugApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3627D7B0F227904002E2C0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3627EE20F22A426002E2C0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3627F010F22A4A5002E2C0F /* DebugApp-MainMenu.xib in Resources */,
+				D3C7F4290F2D3F97007A4242 /* xml2html.xsl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D3627D7E0F227904002E2C0F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3627E050F227D5A002E2C0F /* FFError.m in Sources */,
+				D3C7F3CD0F283428007A4242 /* FFEngineFactory.m in Sources */,
+				D36286860F25322A002E2C0F /* FFXmlDocPtrWrapper.m in Sources */,
+				D3C7F35A0F26D134007A4242 /* SBJSON.m in Sources */,
+				D3C7F35C0F26D134007A4242 /* NSString+SBJSON.m in Sources */,
+				D3C7F3C70F283428007A4242 /* FFEngineBaseImpl+BasicAuth.m in Sources */,
+				D3C7F3C90F283428007A4242 /* FFEngineBaseImpl.m in Sources */,
+				D3C7F3CB0F283428007A4242 /* FFEngineCFNetworkImpl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3627D7C0F227904002E2C0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3627DBA0F227B87002E2C0F /* FriendFeedTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3627EE30F22A426002E2C0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3627EF30F22A454002E2C0F /* DebugAppDelegate.m in Sources */,
+				D3627F140F22A59E002E2C0F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3627E4F0F229D03002E2C0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* FFEngine */;
+			targetProxy = D3627E4E0F229D03002E2C0F /* PBXContainerItemProxy */;
+		};
+		D3627F400F22A6CA002E2C0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* FFEngine */;
+			targetProxy = D3627F3F0F22A6CA002E2C0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FFDEBUG = 1;
+				FFDESKTOP = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FFEngine_Prefix.pch;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_CFLAGS = "-DFF_DTOP_ENV";
+				PRODUCT_NAME = FFEngine;
+				SDKROOT = "";
+				USER_HEADER_SEARCH_PATHS = "$(LIBXML_PREFIX)";
+				WARNING_CFLAGS = (
+					"-Wstrict-selector-match",
+					"-Wundeclared-selector",
+				);
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FFDESKTOP = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FFEngine_Prefix.pch;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS",
+					"-DFF_DTOP_ENV",
+				);
+				PRODUCT_NAME = FFEngine;
+				USER_HEADER_SEARCH_PATHS = "$(LIBXML_PREFIX)";
+				WARNING_CFLAGS = (
+					"-Wstrict-selector-match",
+					"-Wundeclared-selector",
+				);
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+		D3627D820F227905002E2C0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)/frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = "Tests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Tests;
+				USER_HEADER_SEARCH_PATHS = "$(LIBXML_PREFIX)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D3627D830F227905002E2C0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)/frameworks\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = "Tests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Tests;
+				USER_HEADER_SEARCH_PATHS = "$(LIBXML_PREFIX)";
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		D3627EE90F22A427002E2C0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				FFDESKTOP = 1;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = "DebugApp-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = DebugApp;
+				USER_HEADER_SEARCH_PATHS = "$(LIBXML_PREFIX)";
+			};
+			name = Debug;
+		};
+		D3627EEA0F22A427002E2C0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FFDESKTOP = 1;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "DebugApp-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = DebugApp;
+				USER_HEADER_SEARCH_PATHS = "$(LIBXML_PREFIX)";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "FFEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "FFEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3627D840F227905002E2C0F /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3627D820F227905002E2C0F /* Debug */,
+				D3627D830F227905002E2C0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3627EEB0F22A427002E2C0F /* Build configuration list for PBXNativeTarget "DebugApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3627EE90F22A427002E2C0F /* Debug */,
+				D3627EEA0F22A427002E2C0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
